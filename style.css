@@ -264,13 +264,29 @@ header ul li a {
     top: 0px;
     position: relative;
     width: 1823px;
-    height: 436px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 326px;
+    padding: 30px 0px 80px;
 }
 
+.content-slide1 {
+    position: relative;
+    height: 276px;
+    margin: 50px 141.5px 0 141.5px;
+    padding: 0px 15px;
+}
 
+.owl-carousel {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 276px;
+}
+
+.img-slide1 {
+    position: relative;
+    height: 250px;
+    padding: 0 15px;
+}
 
 .sec4 {
     top: 0px;
@@ -356,7 +372,7 @@ header ul li a {
 
 .p6 {
     margin-top: 115px;
-    width: 1510px;
+    width: 1823px;
     height: 38px;
     padding: 0px 0px 32px;
     font-size: 32px;
@@ -391,45 +407,6 @@ header ul li a {
     font-size: 17px;
     font-weight: 700;
     color: #fff;
-}
-
-.sec8 {
-    top: 0px;
-    position: relative;
-    width: 1823px;
-    height: 634px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container4 {
-    width: 1540px;
-    height: 494px;
-    position: relative;
-    margin: 0px 141.5px;
-    padding: 0px 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.p7 {
-    position: relative;
-    height: 38px;
-    width: 100%;
-    margin: 0px 125.844px 24px 125.828px;
-    padding: 0px 15px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.bl82 {
-    position: absolute;
-    height: 432px;
-    width: 1258.33px;
-    margin: 62px 125.844px 0px 125.828px;
-    padding: 0px 15px;
 }
 
 .sec9 {

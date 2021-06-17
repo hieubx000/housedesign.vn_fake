@@ -1,16 +1,33 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+ul.list-top {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.top li.top-item {
+  padding: 0px 8px;
+  width: 64px;
+  cursor: pointer;
+}
 .footer .img {
   width: 46%;
   margin: auto;
 }
-
+.center {
+}
 img {
   width: 100%;
 }
 a {
   text-decoration: none;
 }
+
 html,
 body {
   width: 100%;
@@ -18,13 +35,182 @@ body {
   font-family: montserrat;
   background-color: rgb(240, 240, 240);
 }
-
+#bodyBorderTop {
+  width: 100%;
+  top: 0px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  position: fixed;
+  z-index: 1001;
+}
+#bodyBorderBottom {
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  position: fixed;
+  z-index: 1000;
+}
+#toTop {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  z-index: 1234;
+  text-align: center;
+  visibility: hidden;
+}
+#toTop.slideUp {
+  animation: slideUp 1s forwards;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+#toTop a {
+  color: black;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  position: relative;
+  line-height: 36px;
+}
+#toTop a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+#toTop a:hover:after {
+  width: 100%;
+}
 .content {
   width: 95%;
   height: 100%;
   margin: auto;
 }
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(239, 239, 239);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/contactBgr.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.navbar {
+  width: inherit;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+}
+@keyframes navbarSlideDown {
+  from {
+    top: -200px;
+  }
+  to {
+    top: -71px;
+    visibility: visible;
+  }
+}
 
+.navbar.navbar-fixed {
+  position: fixed;
+  visibility: hidden;
+  z-index: 10000;
+  left: 0px;
+  animation: navbarSlideDown ease-in-out 1s forwards;
+  /* animation-delay: 0.1s; */
+}
+
+.navbar .logo {
+  color: white;
+  width: 76px;
+  margin-left: 48px;
+}
+.navbar .logo.logo-fixed {
+  width: 38px;
+  margin-left: 40px;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  margin-right: 24px;
+}
+
+.navbar .menu.menu-fixed .menu-item {
+  font-weight: 400;
+  color: rgb(122, 122, 122);
+}
+.navbar .menu.menu-fixed .menu-item.lienHe {
+  color: black !important;
+}
+.navbar .menu-item {
+  padding: 0px 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  color: rgb(199, 199, 199);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.navbar .menu-item:hover {
+  color: white;
+}
+.menu-item-list {
+  position: absolute;
+  content: "";
+  list-style: none;
+  background-color: black;
+  width: 256px;
+  margin-top: 11px;
+  display: none;
+  animation: 0.4s ease-in 0s 1 normal none running fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-item-list::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 16px;
+  background-color: rgba(0, 0, 255, 0);
+  top: -13px;
+  left: 0px;
+}
+.navbar .menu-item:hover .menu-item-list {
+  display: block;
+}
+.menu-item-list-item {
+  padding: 14px 16px;
+  font-size: 0.65rem;
+  color: rgb(199, 199, 199);
+  transition: all 0.2s ease 0s;
+  font-weight: 500;
+  letter-spacing: initial;
+}
+.menu-item-list-item:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
 .container {
   background-color: white;
   width: 100%;
@@ -33,7 +219,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: inherit;
-  
+  padding: 124px;
 }
 .contactUs .left {
   flex-basis: 49%;
@@ -41,14 +227,20 @@ body {
 .contactUs .right {
   flex-basis: 49%;
 }
+
+#location {
+}
 .mapouter {
   position: relative;
   text-align: right;
-  width: 800px;
-  right: 0px;
+  width: 100%;
   height: 432px;
   padding: 24px;
   border: 1px solid gainsboro;
+  display: none;
+}
+.mapouter.appear {
+  display: block;
 }
 .gmap_canvas {
   overflow: hidden;
@@ -101,6 +293,9 @@ span.flex {
 .required-label {
   color: red;
 }
+
+.contactUs {
+}
 input {
   width: -webkit-fill-available;
   border-top: none;
@@ -111,7 +306,10 @@ input {
   outline: none;
   font-size: 20px;
   margin-top: 16px;
-  transition: 0.8s;
+  transition: 0.4s;
+}
+input.error {
+  border-color: rgb(179, 30, 30);
 }
 input:focus {
   border-bottom: 1px solid black;
@@ -119,6 +317,10 @@ input:focus {
 .form-group {
   margin-bottom: 28px;
 }
+.form-message.error {
+  color: red;
+}
+
 select {
   width: -webkit-fill-available;
   outline: none;
@@ -151,7 +353,8 @@ select:hover {
 .footer .footer-flex {
   display: flex;
   justify-content: space-around;
-  width: 1823px;
+  width: 100%;
+  padding: 0px 124px;
 }
 .footer .footer-flex .left,
 .footer .footer-flex .center,
@@ -172,7 +375,6 @@ select:hover {
   flex-basis: 80%;
   font-size: 0.85rem;
   color: grey;
-  width: 100px;
 }
 .icon_block {
   text-align: center;

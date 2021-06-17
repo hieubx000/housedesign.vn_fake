@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./contact.css" />
+</head>
+
+<body>
+    <div id="bodyBorderTop"></div>
+    <div id="bodyBorderBottom"></div>
+    <div id="bodyBorderLeft"></div>
+    <div id="bodyBorderRight"></div>
+    <div id="toTop"><a href="">TO TOP</a></div>
+    <div class="content">
+        <div class="header">
+            <div class="navbar">
+                <a href="#" class="logo"><img src="./images/logo.png" alt="logo" /></a>
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-item" href="index.html">TRANG CHỦ</a> </li>
+                    <li class="menu-item">
+                        DỰ ÁN
+                        <ul class="menu-item-list">
+                            <li class="menu-item-list-item">Căn hộ</li>
+                            <li class="menu-item-list-item">Nhà phố</li>
+                            <li class="menu-item-list-item">Biệt thự</li>
+                            <li class="menu-item-list-item">Showroom</li>
+                            <li class="menu-item-list-item">Văn phòng</li>
+                            <li class="menu-item-list-item">Kiến trúc</li>
+                            <li class="menu-item-list-item">Cà phê - Nhà hàng</li>
+                            <li class="menu-item-list-item">Hình ảnh thi công</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        THIẾT KẾ NỘI THẤT
+                        <ul class="menu-item-list">
+                            <li class="menu-item-list-item">Thiết kế nội thất chung cư</li>
+                            <li class="menu-item-list-item">Thiết kế nội thất văn phòng</li>
+                            <li class="menu-item-list-item">Thiết kế nội thất biệt thự</li>
+                            <li class="menu-item-list-item">Thiết kế nội thất showroom</li>
+                            <li class="menu-item-list-item">Thiết kế nội thất ciến trúc</li>
+                            <li class="menu-item-list-item">
+                                Thiết kế nội thất cà phê - Nhà hàng
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        PHONG CÁCH THIẾT KẾ
+                        <ul class="menu-item-list">
+                            <li class="menu-item-list-item">Nội thất hiện đại</li>
+                            <li class="menu-item-list-item">Nội thất đương đại</li>
+                            <li class="menu-item-list-item">Tân cổ điển</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">BLOG</li>
+                    <li class="menu-item">SHOP</li>
+                    <li class="menu-item">GIỚI THIỆU</li>
+                    <li style="color: white" class="menu-item lienHe">LIÊN HỆ</li>
+                </ul>
+            </div>
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="contactUs">
+                <!-- form validation -->
+                <div class="left">
+                    <form id="form" action="" method="get">
+                        <h1 style="text-align: center; margin-bottom: 36px">
+                            Contact Us
+                        </h1>
+                        <!-- form-group -->
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <span class="required-label">*</span>
+                            <input type="text" name="name" id="name" class="form-control" isrequired />
+                            <small class="form-message"></small>
+                        </div>
+                        <!-- end form-group -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <span class="required-label">*</span>
+                            <input type="email" name="email" id="email" class="form-control" isrequired />
+                            <small class="form-message"></small>
+                        </div>
+                        <!-- end form-group -->
+                        <div class="form-group">
+                            <label for="number">Số điện thoại</label>
+                            <span class="required-label">*</span>
+                            <input min="0" type="number" name="number" id="number" class="form-control" isrequired />
+                            <small class="form-message"></small>
+                        </div>
+                        <!-- end form-group -->
+                        <div class="form-group">
+                            <label for="adress">Địa chỉ</label>
+                            <span class="required-label">*</span>
+                            <input type="text" name="address" id="address" class="form-control" isrequired />
+                            <small class="form-message"></small>
+                        </div>
+                        <!-- end form-group -->
+                        <div class="form-group">
+                            <label for="area">Diện tích</label>
+                            <input type="text" name="area" id="area" class="form-control" />
+                        </div>
+                        <!-- end form-group -->
+                        <div class="form-group">
+                            <label for="projectType">Loại hình dự án</label>
+                            <select id="projectType" name="projectType">
+                  <option value="" selected disabled>Vui lòng chọn</option>
+                  <option value="Căn hộ">Căn hộ</option>
+                  <option value="Nhà phố">Nhà phố</option>
+                  <option value="Văn phòng">Văn phòng</option>
+                  <option value="Biệt thự">Biệt thự</option>
+                  <option value="Showroom">Showroom</option>
+                </select>
+                        </div>
+                        <!-- form select -->
+                        <div class="form-group">
+                            <label for="fund">Ngân sách</label>
+                            <select id="fund" name="fund">
+                  <option value="" selected disabled>Vui lòng chọn</option>
+                  <option value="">Dưới 500 triệu</option>
+                  <option value="1 tỷ">1 tỷ</option>
+                  <option value="1 tỷ đến 3 tỷ">1 tỷ đến 3 tỷ</option>
+                  <option value="trên 3 tỷ">trên 3 tỷ</option>
+                </select>
+                        </div>
+                        <!-- form select -->
+                        <div class="form-group">
+                            <label for="design">Loại hình thiết kế</label>
+                            <select id="design" name="design">
+                  <option value="" disabled selected>
+                    Phong cách của bạn là?
+                  </option>
+                  <option value="Hiện đại">Hiện đại</option>
+                  <option value="Cổ điển">Cổ điển</option>
+                  <option value="Tân cổ điển">Tân cổ điển</option>
+                  <option value="Bắc Âu">Bắc Âu</option>
+                </select>
+                        </div>
+                        <!-- form select -->
+                        <!-- submit -->
+                        <button type="submit" class="submit">Liên hệ</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <!-- iframe -->
+                    <span id="capitals" class="flex">
+              <h3 class="hcm active">Hồ Chí Minh</h3>
+              <h3 class="hn">Hà Nội</h3>
+            </span>
+                    <!-- embed  -->
+                    <div id="location">
+                        <div class="mapouter appear">
+                            <div class="gmap_canvas">
+                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=653&amp;height=380&amp;hl=en&amp;q=35-37 Đ. Số 11, P, Quận 2, Thành phố Hồ Chí Minh 70000, Vietnam&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            </div>
+                        </div>
+                        <!-- hcm -->
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Chung%20c%C6%B0%20Westa%20H%C3%A0%20%C4%90%C3%B4ng%20V%C5%A9%20Tr%E1%BB%8Dng%20Kh%C3%A1nh%20P.%20M%E1%BB%99%20Lao%20H%C3%A0%20%C4%90%C3%B4ng,%20H%C3%A0%20N%E1%BB%99i&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                            </div>
+                        </div>
+                        <!-- Ha noi -->
+                    </div>
+                    <!-- phone contact-->
+                    <div class="phone_flex">
+                        <ul class="list">
+                            <li class="list-item">
+                                <i class="fa fa-phone"></i> TPHCM 0973990339(Mr. Thành)
+                            </li>
+                            <li class="list-item">
+                                <i class="fa fa-phone"></i> Hà Nội 0911000236 (Mr.Tiến)
+                            </li>
+                            <li class="list-item">
+                                <i class="fa fa-envelope-square"></i> info@housedesign.vn
+                            </li>
+                            <li class="list-item">
+                                <i class="fa fa-facebook"></i> fb.com/housedesign.vn
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-flex">
+                <div class="left">
+                    <h3>Văn phòng Hồ Chí Minh</h3>
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/adress.png" alt="adress" />
+                        </div>
+                        <div class="right">
+                            35-37 đường số 11, phường An Phú, quận 2, TP. HCM
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/house-icon.png" alt="home" />
+                        </div>
+                        <div class="right">
+                            Xưởng sản xuất: 448 Nguyễn Văn Tăng, P. Long Thạnh Mỹ, Q9
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/staff-icon.png" alt="staff" />
+                        </div>
+                        <div class="right">
+                            35-37 đường số 11, phường An Phú, quận 2, TP. HCM
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/mail-icon.png" alt="email" />
+                        </div>
+                        <div class="right">info@housedesign.vn</div>
+                    </div>
+                    <!-- end -->
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/adress.png" alt="adress" />
+                        </div>
+                        <div class="right">
+                            35-37 đường số 11, phường An Phú, quận 2, TP. HCM
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+                <div class="center">
+                    <div class="img"><img src="./images/logo.png" alt="" /></div>
+                </div>
+                <div class="right">
+                    <h3>Chi nhánh Hà Nội</h3>
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/adress.png" alt="adress" />
+                        </div>
+                        <div class="right">
+                            35-37 đường số 11, phường An Phú, quận 2, TP. HCM
+                        </div>
+                    </div>
+                    <div class="block-flex">
+                        <div class="left">
+                            <img src="./images/staff-icon.png" alt="staff" />
+                        </div>
+                        <div class="right">0967000236</div>
+                    </div>
+                </div>
+            </div>
+            <!-- icon block -->
+            <div class="icon_block">
+                <ul class="top">
+                    <li class="top-item">
+                        <img src="./images/fb-icon.png" alt="" />
+                    </li>
+                    <li class="top-item">
+                        <img src="./images/ig-icon.png" alt="" />
+                    </li>
+                    <li class="top-item">
+                        <img src="./images/youtube-icon.png" alt="" />
+                    </li>
+                </ul>
+
+                <div class="mid"></div>
+                <div class="bottom">
+                    <div class="link-group">
+                        <a href="">Chính sách bảo mật</a>
+                        <a href="" target="_blank">Thiết kế nội thất chung cư </a>
+                        <a href="">Phong cách thiết kế</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="./contact.js"></script>
+</body>
+
+</html>
